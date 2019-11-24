@@ -4,6 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BDF2D2"
     tools:context=".DescricaoIMC">
 
+    <TextView
+        android:id="@+id/Imc"
+        android:layout_width="336dp"
+        android:layout_height="69dp"
+        android:text="O que é IMC"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/ImcDesc"
+        android:layout_width="385dp"
+        android:layout_height="481dp"
+        android:includeFontPadding="false"
+        android:text="Uma maneira de saber se o seu peso  está adequado à sua altura  é calculando o  Indice de massa corporal.  O resultado dessa fórmula  matemática poderá indicar, por exemplo, se você está com peso adequado, se apresenta magreza,  sobrepeso ou obesidade."
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
