@@ -1,0 +1,13 @@
+<resources>
+    <declare-styleable name="HistoricoView">
+        <attr name="data" format="string" />
+        <attr name="imc" format="float" />
+        <attr name="caloriasManter" format="float"/>
+        <attr name="caloriasEmagrecer" format="float"/>
+        <attr name="caloriasEngordar" format="float"/>
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>
