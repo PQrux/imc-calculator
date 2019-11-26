@@ -23,13 +23,14 @@ public class Home extends AppCompatActivity {
     private RecyclerView.Adapter adaptador;
     private RecyclerView.LayoutManager layoutManager;
     private UserData userData;
+    private ContentController contentController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
         userData = new UserData("Joao", 1.60f, 1995,true);
+        contentController = new ContentController(this);
         lista = findViewById(R.id.lista);
         calcular = findViewById(R.id.calcular);
         layoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
