@@ -5,17 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#BDF2D2"
     tools:context=".Home">
 
     <Button
         android:id="@+id/calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DB524C"
         android:padding="20dp"
-        android:text="CALCULAR"
+        android:background="#DB524C"
         android:textColor="#FFFFFF"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:text="CALCULAR"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lista"

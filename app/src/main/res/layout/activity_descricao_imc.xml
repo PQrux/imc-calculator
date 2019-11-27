@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BDF2D2"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".DescricaoIMC">
 
     <TextView
         android:id="@+id/Imc"
-        android:layout_width="336dp"
-        android:layout_height="69dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:text="O que é IMC"
-        android:textSize="50dp"
+        android:textAlignment="center"
+        android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="53dp" />
 
     <TextView
         android:id="@+id/ImcDesc"
-        android:layout_width="385dp"
-        android:layout_height="481dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:includeFontPadding="false"
         android:text="Uma maneira de saber se o seu peso  está adequado à sua altura  é calculando o  Indice de massa corporal.  O resultado dessa fórmula  matemática poderá indicar, por exemplo, se você está com peso adequado, se apresenta magreza,  sobrepeso ou obesidade."
-        android:textSize="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/prosseguir2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prosseguir"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="571dp"
+        android:padding="20dp"
+        android:background="#DB524C"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

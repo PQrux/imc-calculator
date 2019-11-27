@@ -1,36 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#BDF2D2"
+    android:padding="20dp"
     tools:context=".DescricaoTMB">
 
     <TextView
-        android:id="@+id/TmbDesc"
-        android:layout_width="385dp"
-        android:layout_height="481dp"
-        android:includeFontPadding="false"
-        android:text="TMB ou, em inglês, BMR, indica a quantidade calórica  básica  necessária para  que o corpo e todos  os seus órgãos funcionem  durante o dia. Esse número varia, no entanto, de acordo com o sexo , peso, altura,  idade"
-        android:textSize="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/Tmb"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O que é TMB"
+        android:textSize="50sp"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="53dp" />
 
     <TextView
-        android:id="@+id/Tmb"
-        android:layout_width="336dp"
-        android:layout_height="69dp"
-        android:text="O que é TMB"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/TmbDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textAlignment="center"
+        android:text="TMB ou, em inglês, BMR, indica a quantidade calórica  básica  necessária para  que o corpo e todos  os seus órgãos funcionem  durante o dia. Esse número varia, no entanto, de acordo com o sexo , peso, altura,  idade"
+        android:textSize="32sp"
+        android:layout_marginBottom="40dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="125dp" />
+    <Button
+        android:id="@+id/prosseguir2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prosseguir"
+        android:padding="20dp"
+        android:background="#DB524C"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="571dp" />
+</LinearLayout>
